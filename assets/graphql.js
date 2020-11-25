@@ -1,4 +1,4 @@
-const accessToken = "227d983a3811b5f5d8d842643453b98c7a437bec";
+const accessToken = "fff67e86f36a87c97f16c29a7508f076afa6ada4";
 const query = `{
   viewer {
     name
