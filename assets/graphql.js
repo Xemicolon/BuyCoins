@@ -1,4 +1,3 @@
-const accessToken = "fff67e86f36a87c97f16c29a7508f076afa6ada4";
 const query = `{
   viewer {
     name
@@ -70,11 +69,10 @@ window.addEventListener("scroll", () => {
 });
 
 fetch("https://api.github.com/graphql", {
-  method: "POST",
+  method: "GET",
   body: JSON.stringify({ query }),
   headers: {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${accessToken}`,
+    Authorization: `Bearer f005c091556adc938923ccf91af0e0220ac781c4`,
   },
 })
   .then((res) => res.text())

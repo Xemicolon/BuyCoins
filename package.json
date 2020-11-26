@@ -1,0 +1,27 @@
+{
+  "name": "BuyCoins",
+  "version": "1.0.0",
+  "description": "BuyCoins Africa Front-End Engineering Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xemicolon/BuyCoins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xemicolon/BuyCoins/issues"
+  },
+  "homepage": "https://github.com/Xemicolon/BuyCoins#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
