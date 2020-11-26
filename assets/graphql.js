@@ -69,10 +69,12 @@ window.addEventListener("scroll", () => {
 });
 
 fetch("https://api.github.com/graphql", {
-  method: "GET",
+  method: "POST",
   body: JSON.stringify({ query }),
   headers: {
-    Authorization: `Bearer f005c091556adc938923ccf91af0e0220ac781c4`,
+    Authorization: `Bearer ${atob(
+      "MWJiYmY0MTI4ODI1YjQ1NDI3MzBlODJiMWNjM2U0NTZlZmY0ZWY1Ng=="
+    )}`,
   },
 })
   .then((res) => res.text())
