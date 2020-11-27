@@ -55,6 +55,9 @@ let repoavatar = document.querySelector(".repo-header-avatar");
 let reponame = document.querySelector(".repo-header-name");
 let repoHeader = document.querySelector(".repos");
 let statusemoji = document.querySelector(".status-emoji");
+let profileStatus = document.querySelector(".profile-status-desc-mobile");
+let loading = document.querySelector(".loading");
+let loadingMobile = document.querySelector(".loading-mobile");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 320) {
@@ -77,11 +80,14 @@ fetch("https://api.github.com/graphql", {
     )}`,
   },
 })
-  .then((res) => res.text())
+  .then((res) => {
+    return res.text();
+  })
   .then((body) => {
     return JSON.parse(body);
   })
   .then((data) => {
+    console.log(data.data.viewer);
     profileName.innerHTML = data.data.viewer.name;
     profileNameMobile.innerHTML = data.data.viewer.name;
     profileUsernameMobile.innerHTML = data.data.viewer.login;
@@ -92,13 +98,16 @@ fetch("https://api.github.com/graphql", {
     profileImg.src = data.data.viewer.avatarUrl;
     profileImageMobile.src = data.data.viewer.avatarUrl;
     statusEmoji.innerHTML = data.data.viewer.status.emojiHTML;
+    profileStatus.innerHTML = data.data.viewer.status.message;
     profileStatEmoji.innerHTML = data.data.viewer.status.emojiHTML;
     bio.innerHTML = data.data.viewer.bio;
     profileBioMobile.innerHTML = data.data.viewer.bio;
     result.innerHTML = `<strong>${data.data.viewer.repositories.totalCount}</strong> results for <strong>public</strong> repositories`;
-    resultMobile.innerHTML = `<strong>${data.data.viewer.repositories.totalCount}</strong> results for <strong>public</strong> repositories`;
+    resultMobile.innerHTML = `<p class="result"><strong>${data.data.viewer.repositories.totalCount}</strong> results for <strong>public</strong> repositories</p>`;
     repocount.innerHTML = data.data.viewer.repositories.totalCount;
     repocountMobile.innerHTML = data.data.viewer.repositories.totalCount;
+    loading.style.display = "none";
+    loadingMobile.style.display = "none";
     let repositories = data.data.viewer.repositories.nodes;
     for (let i = 0; i < repositories.length; i++) {
       let repoDate = new Date(Date.parse(repositories[i].updatedAt))

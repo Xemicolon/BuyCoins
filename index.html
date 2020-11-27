@@ -62,11 +62,11 @@
                                         try {
                                             Object.defineProperty(navigator,
                                                 'globalPrivacyControl', {
-                                                    value: false,
-                                                    enumerable: true
-                                                }) // Remove script tag after execution
+                                                value: false,
+                                                enumerable: true
+                                            }) // Remove script tag after execution
                                             document.currentScript.parentElement.removeChild(document.currentScript)
-                                        } catch (e) {}
+                                        } catch (e) { }
                                     </script>
                                     <path fill="none" stroke="#979A9C" opacity="0.4"
                                         d="M3.5,0.5h12c1.7,0,3,1.3,3,3v13c0,1.7-1.3,3-3,3h-12c-1.7,0-3-1.3-3-3v-13C0.5,1.8,1.8,0.5,3.5,0.5z" />
@@ -76,76 +76,76 @@
                                             Object.defineProperty(screen, "availTop", {
                                                 value: 0
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen,
                                                 "availLeft", {
-                                                    value: 0
-                                                });
-                                        } catch (e) {}
+                                                value: 0
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen, "availWidth", {
                                                 value: 1280
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen,
                                                 "availHeight", {
-                                                    value: 720
-                                                });
-                                        } catch (e) {}
+                                                value: 720
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen, "colorDepth", {
                                                 value: 24
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen,
                                                 "pixelDepth", {
-                                                    value: 24
-                                                });
-                                        } catch (e) {}
+                                                value: 24
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "keyboard", {
                                                 value: undefined
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "hardwareConcurrency", {
                                                 value: 8
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "deviceMemory", {
                                                 value: 8
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "webkitTemporaryStorage", {
                                                 value: undefined
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator,
                                                 "webkitPersistentStorage", {
-                                                    value: undefined
-                                                });
-                                        } catch (e) {}
+                                                value: undefined
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator,
                                                 "appVersion", {
-                                                    value: `5.0 (Windows NT 10.0; Win64; x64)
+                                                value: `5.0 (Windows NT 10.0; Win64; x64)
 AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
 83.0.4103.116 Safari / 537.36`
-                                                });
-                                        } catch (e) {}
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "doNotTrack", {
                                                 value: null
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         navigator.getBattery = function
-                                        getBattery() {
+                                            getBattery() {
                                             let battery = {
                                                 "charging": true,
                                                 "chargingTime": 0,
@@ -159,7 +159,7 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery, 'onchargingtimechange', {
                                                     enumerable: true,
@@ -167,7 +167,7 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery, 'ondischargingtimechange', {
                                                     enumerable: true,
@@ -175,7 +175,7 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery, 'onlevelchange', {
                                                     enumerable: true,
@@ -183,7 +183,7 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             battery.addEventListener = function addEventListener() {
                                                 return
                                             }
@@ -191,24 +191,24 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                         }
                                         try {
                                             window.screenY = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenTop = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.top.window.outerHeight =
                                                 window.screen.height
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenX = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenLeft = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.top.window.outerWidth =
                                                 window.screen.width
-                                        } catch (e) {}
+                                        } catch (e) { }
                                     </script>
                                     <script xmlns="" id="webrtc-control" />
                                     </svg>
@@ -291,72 +291,72 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                             Object.defineProperty(screen, "availTop", {
                                                 value: 0
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen, "availLeft", {
                                                 value: 0
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen,
                                                 "availWidth", {
-                                                    value: 1280
-                                                });
-                                        } catch (e) {}
+                                                value: 1280
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen, "availHeight", {
                                                 value: 720
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen, "colorDepth", {
                                                 value: 24
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(screen,
                                                 "pixelDepth", {
-                                                    value: 24
-                                                });
-                                        } catch (e) {}
+                                                value: 24
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "keyboard", {
                                                 value: undefined
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "hardwareConcurrency", {
                                                 value: 8
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "deviceMemory", {
                                                 value: 8
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator,
                                                 "webkitTemporaryStorage", {
-                                                    value: undefined
-                                                });
-                                        } catch (e) {}
+                                                value: undefined
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator,
                                                 "webkitPersistentStorage", {
-                                                    value: undefined
-                                                });
-                                        } catch (e) {}
+                                                value: undefined
+                                            });
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator,
                                                 "appVersion", {});
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             Object.defineProperty(navigator, "doNotTrack", {
                                                 value: null
                                             });
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         navigator.getBattery = function
-                                        getBattery() {
+                                            getBattery() {
                                             let battery = {
                                                 "charging": true,
                                                 "chargingTime": 0,
@@ -370,7 +370,7 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery, 'onchargingtimechange', {
                                                     enumerable: true,
@@ -378,50 +378,50 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
                                                     writable: false,
                                                     value: undefined
                                                 })
-                                            } catch (e) {}
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery,
                                                     'ondischargingtimechange', {
-                                                        enumerable: true,
-                                                        configurable: false,
-                                                        writable: false,
-                                                        value: undefined
-                                                    })
-                                            } catch (e) {}
+                                                    enumerable: true,
+                                                    configurable: false,
+                                                    writable: false,
+                                                    value: undefined
+                                                })
+                                            } catch (e) { }
                                             try {
                                                 Object.defineProperty(battery,
                                                     'onlevelchange', {
-                                                        enumerable: true,
-                                                        configurable: false,
-                                                        writable: false,
-                                                        value: undefined
-                                                    })
-                                            } catch (e) {}
+                                                    enumerable: true,
+                                                    configurable: false,
+                                                    writable: false,
+                                                    value: undefined
+                                                })
+                                            } catch (e) { }
                                             battery.addEventListener = function
-                                            addEventListener() {
+                                                addEventListener() {
                                                 return
                                             }
                                             return Promise.resolve(battery)
                                         }
                                         try {
                                             window.screenY = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenTop = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.top.window.outerHeight =
                                                 window.screen.height
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenX = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.screenLeft = 0
-                                        } catch (e) {}
+                                        } catch (e) { }
                                         try {
                                             window.top.window.outerWidth = window.screen.width
-                                        } catch (e) {}
+                                        } catch (e) { }
                                     </script>
                                     <script xmlns="" id="webrtc-control" />
                                     </svg>
@@ -544,14 +544,15 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
         <div class="profile-info">
            <div class="profile-info_">
                 <div class="profile-img">
-               <img src="" alt="" class="avatar" width="260" height="260">
+               <img src="./assets/img/loading.gif" alt="" class="avatar" width="260"
+                   height="260">
                     
                <div class="profile-status">
                    <span class="status-emoji"></span>
                 </div>
            </div>
            <div class="profile">
-               <h1 class="profile-name"></h1>
+               <h1 class="profile-name">Loading...</h1>
            <p class="username"></p>
            </div>
            
@@ -564,11 +565,11 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
            <div class="repo-search">
                <input type="text" name="search" placeholder="Find a repository..." class="search-repo" id="">
            </div>
+        <p class="result"></p>
 
 
            <div class="repositories">
-           <p class="result"></p>
-
+            <p class="loading">Loading...</p>
               
            </div>
        </div>
@@ -580,17 +581,17 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
    <div class="mobile">
        <div class="profile-mobile">
            <div class="profile-info-mobile">
-               <img src="" alt="" class="profile-image-mobile">
+               <img src="./assets/img/loading.gif" alt="" class="profile-image-mobile">
                <div class="profile-details-mobile">
-                   <h1 class="profile-name-mobile"></h1>
+                   <h1 class="profile-name-mobile">Loading...</h1>
                    <p class="profile-username-mobile"></p>
                </div>
            </div>
            <div class="profile-status-mobile">
                <div class="profile-status-emoji-mobile"></div>
-               <p class="profile-status-desc-mobile">Working from home</p>
+               <p class="profile-status-desc-mobile">Loading...</p>
            </div>
-           <p class="profile-bio-mobile"></p>
+           <p class="profile-bio-mobile">Loading...</p>
        </div>
 
        <div class="repo-tab-mobile">
@@ -633,7 +634,10 @@ AppleWebKit/ 537.36(KHTML, like Gecko) Chrome /
            <input type="text" name="" class="search-mobile_" placeholder="Find a repository" id="">
        </div>
 
-        <div class="result-mobile"></div>
+        <div class="result-mobile">
+        <p class="loading-mobile">Loading...</p>
+
+        </div>
 
        <div class="repository-mobile">
        </div>
