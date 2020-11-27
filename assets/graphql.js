@@ -82,7 +82,6 @@ fetch("https://api.github.com/graphql", {
     return JSON.parse(body);
   })
   .then((data) => {
-    console.log(data.data.viewer);
     profileName.innerHTML = data.data.viewer.name;
     profileNameMobile.innerHTML = data.data.viewer.name;
     profileUsernameMobile.innerHTML = data.data.viewer.login;
